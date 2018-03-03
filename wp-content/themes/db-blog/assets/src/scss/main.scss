@@ -1,0 +1,35 @@
+// Project Settings
+// This is used for setting color variables, spacing, fonts and more.
+@import 'settings/settings';
+
+// Mixins
+@import 'mixins/spacing';
+@import 'mixins/palette';
+
+// Base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/fonts';
+
+// Config
+// Uses variables from settings.scss
+@import 'config/type-scale';
+@import 'config/typography';
+@import 'config/layout';
+@import 'config/align';
+@import 'config/grid';
+@import 'config/flexbox';
+@import 'config/position';
+@import 'config/margin';
+@import 'config/padding';
+
+
+//Components
+@import 'components/header';
+@import 'components/container';
+@import 'components/front-page';
+@import 'components/post';
+
+
+
+
