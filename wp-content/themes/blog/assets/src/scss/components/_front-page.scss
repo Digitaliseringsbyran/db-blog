@@ -1,22 +1,5 @@
 .front-page {
 	&__hero {
-		@media (min-width:$breakpoint-sm) {
-			height:500px;
-			display:flex;
-			align-items:center;
-			background:red;
-		}
-	}
-
-	&__categories {
-		@media (max-width:$breakpoint-sm) {
-			margin-top:$space-6;
-		}
-	}
-
-	&__intro {
-		@media (max-width:$breakpoint-sm) {
-			margin-top:$space-4;
-		}
+		background:red;
 	}
 }
