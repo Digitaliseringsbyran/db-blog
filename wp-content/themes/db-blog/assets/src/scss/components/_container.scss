@@ -1,4 +1,12 @@
 .container {
-	max-width:1600px;
-	margin: 0 auto;
+	//max-width:1240px;
+	padding:0 5%;
+	@media (min-width:$breakpoint-sm) {
+		padding:0 5%;
+	}
+	@media (min-width:$breakpoint-md) {
+		padding:0 7.5%;
+	}
+	margin:0 auto;
+	overflow:hidden;
 }
