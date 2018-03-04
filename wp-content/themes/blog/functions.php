@@ -25,7 +25,7 @@ add_theme_support('post-thumbnails');
 add_image_size('large', 700, '', true); // Large Thumbnail
 add_image_size('medium', 250, '', true); // Medium Thumbnail
 add_image_size('small', 120, '', true); // Small Thumbnail
-add_image_size('card-thumbnail', 600, 400, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+add_image_size('db-medium', 600, 400, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
 
 function blog_scripts() {

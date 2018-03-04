@@ -16,19 +16,3 @@
 
 	</head>
 	<body>
-
-
-			<!-- header -->
-			<header class="header" role="banner">
-				<?php 
-					$menuItems = wp_get_nav_menu_items("global-navigation" ); 
-				?>
-				<div class="header__logo">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
-				</div>
-
-				<nav class="navigation">
-				</nav>
-
-			</header>
-			<!-- /header -->
