@@ -37,8 +37,15 @@ function blog_scripts() {
     wp_register_script('app', get_template_directory_uri() . "/assets/dist/js/app.js");
     wp_enqueue_script('app');
 
+    wp_register_script('lazysizes', "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js");
+    wp_enqueue_script('lazysizes');
+
     wp_register_script('flickity', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js");
     wp_enqueue_script('flickity');
+
+    wp_register_script('scroll-reveal', "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js");
+    wp_enqueue_script('scroll-reveal');
+
 
     wp_enqueue_style( 'stylesheet', get_stylesheet_directory_uri() . '/assets/dist/css/main.min.css' );
     wp_enqueue_style( 'stylesheet', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );
