@@ -22,5 +22,4 @@
 		<div class="col-12 sm-col-10 mx-auto">
 			<img src="<?php echo get_template_directory_uri()?>/assets/dist/img/db-logo.svg" alt="">
 		</div>
-		
 	</header>

@@ -1,0 +1,33 @@
+.footer {
+   position:fixed;
+   bottom:0;
+   right:0;
+   left:0;
+   padding:$space-3 $space-3;
+   background:$white;
+   @media (min-width:$breakpoint-sm) {
+   		padding:$space-4 $space-3;
+   }
+   border-top:1px solid palette(grey, x-light);
+}
+
+
+
+.footer__a {
+	margin-left:$space-4;
+}
+
+.footer__info {
+	font-family:$mono-font-family;
+	font-size:1rem;
+	margin-top:$space-1;
+	font-weight:200;
+}
+
+
+.footer__heading {
+	font-family:$mono-font-family;
+	text-transform:uppercase;
+	font-size:0.75rem;
+}
+
