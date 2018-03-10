@@ -15,6 +15,16 @@ jQuery(function($) {
 		}
 	);
 
+	$(window).scroll(function() {
+
+	    if ($(document).scrollTop() > 400){  
+	        $('.footer').addClass('visible');
+	    }
+	    else{
+	       $('.footer').removeClass('visible');
+	    }
+	});
+
 
 	$('.post__carousel').flickity({
 	  // options
