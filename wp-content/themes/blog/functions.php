@@ -26,6 +26,7 @@ add_image_size('large', 700, '', true); // Large Thumbnail
 add_image_size('medium', 250, '', true); // Medium Thumbnail
 add_image_size('small', 120, '', true); // Small Thumbnail
 add_image_size('db-medium', 600, 400, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+add_image_size('db-medium@2x', 1200, 800, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
 
 function blog_scripts() {
@@ -56,5 +57,46 @@ function blog_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'blog_scripts', 20 );
 
+
+
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
+
+
+
+function add_people_post_type() {
+  $labels = array(
+    'name' => _x('People', 'post type general name'),
+    'singular_name' => _x('People', 'post type singular name'),
+    'add_new' => _x('Add New', 'person'),
+    'add_new_item' => __('Add person'),
+    'edit_item' => __('Edit Person'),
+    'new_item' => __('New Person'),
+    'all_items' => __('All people'),
+    'view_item' => __('View person'),
+    'parent_item_colon' => '',
+    'menu_name' => __('People')
+
+  );
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => null,
+    'supports' => array( 'title', 'editor', 'thumbnail' )
+  ); 
+  register_post_type('people',$args);
+}
+
+add_action( 'init', 'add_people_post_type' );
 
 ?>

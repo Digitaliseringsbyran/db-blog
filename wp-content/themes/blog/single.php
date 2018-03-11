@@ -4,7 +4,7 @@
 	<!-- section -->
 	<article class="article clearfix">
 		<div class="col-12 sm-col-11 md-col-10 mx-auto">
-			<div class="col col-12 sm-col-5">
+			<div class="col col-12 sm-col-7 lg-col-5">
 				<div class="article__intro-section col col-11 sm-col-10">
 					<?php 
 						$categories = get_the_category();
@@ -18,7 +18,7 @@
 					<img class="article__img lazyload" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'db-medium'); ?>" alt="">
 				</div>
 			</div>
-			<div class="article__content col col-12 sm-col-7">
+			<div class="article__content col col-12 sm-col-9 lg-col-7">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 				  the_content();
 				endwhile; ?>

@@ -72,7 +72,7 @@
 							</a>
 							<p class="post__excerpt"><?php the_field('excerpt') ?></p>	
 						</div>
-						<div class="post__img-section col col-12 sm-col-5 md-col-4">
+						<div class="post__img-section col col-12 sm-col-6 md-col-4">
 							<?php 
 								
 								$images = get_field('gallery');
@@ -83,13 +83,13 @@
 								</div>
 								<div class="post__carousel">
 									<?php foreach( $images as $image ): ?>
-										<img class="post__img lazyload" data-src="<?php echo $image['sizes']['db-medium']; ?>" alt="">
+										<img class="post__img lazyload" data-src="<?php echo $image['sizes']['db-medium@2x']; ?>" alt="">
 									 <?php endforeach; ?>
 								</div>
 
 								<?php else :?>
 									<div class="post__img-container">
-										<img class="post__img lazyload" data-src="<?php echo get_the_post_thumbnail_url( $post->ID, 'db-medium' ) ?>" alt="">
+										<img class="post__img lazyload" data-src="<?php echo get_the_post_thumbnail_url( $post->ID, 'db-medium@2x' ) ?>" alt="">
 									</div>
 							<?php endif ?>
 						</div>

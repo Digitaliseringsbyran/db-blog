@@ -64,13 +64,13 @@
 
 
 .article__intro-section {
-
+	
 }
 
 
 
 .article__content {
-	@media (max-width:$breakpoint-sm) {
+	@media (max-width:$breakpoint-md) {
 		margin-top:$space-3;
 	}
 	@media (min-width:$breakpoint-lg) {
