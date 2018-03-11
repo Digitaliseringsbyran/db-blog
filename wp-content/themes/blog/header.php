@@ -19,7 +19,19 @@
 
 
 	<header class="header clearfix">
-		<div class="col-12 sm-col-10 mx-auto">
-			<img src="<?php echo get_template_directory_uri()?>/assets/dist/img/db-logo.svg" alt="">
+		<div class="col-12 sm-col-11 md-col-10 mx-auto">
+			<div class="header__inner inline-flex justify-between content-center">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img class="header__logo" src="<?php echo get_template_directory_uri()?>/assets/dist/img/db-logo.svg" alt="">
+				</a>
+				<div class="header__links right">
+					<a class="header__a inline-block" href="tel:0730936515">
+						<span class="header__heading block">Ring oss</span>
+					</a>
+					<a class="header__a inline-block" href="mailto:info@digitaliseringsbyran.se">
+						<span class="header__heading block">Maila</span>
+					</a>
+				</div>
+			</div>
 		</div>
 	</header>

@@ -3,9 +3,11 @@
 	<main class="main" role="main">
 
 		<div class="intro clearfix">
-			<div class="col col-12 sm-col-7 md-col-5">
-				<p class="intro__p">Välkommen till Digitaliseringsbyrån i Göteborg.</p>
+			<div class="col-12 sm-col-9 md-col-8 lg-col-5">
+				<p class="intro__p">Välkommen till <br> Digitaliseringsbyrån i Göteborg.</p>
 				<p class="intro__p">Vi hjälper företag att effektivt testa idéer, lansera digitala tjänster snabbare och optimera sin digitala affär.</p>
+			</div>
+			<div class="col-12 sm-col-10 md-col-8">
 				<span class="intro__span">Vi gör det genom att:</span>
 
 				<div class="intro-service">
@@ -55,25 +57,30 @@
 			
 			<?php foreach ( $posts_array as $post ) : ?>
 					<div class="post clearfix">
-						<div class="post__date-section col col-2 sm-col-1">
+						<div class="post__date-section col col-2 sm-col-1 md-col-1">
 							<span class="post__day block"><?php echo get_the_date('d'); ?></span>
 							<span class="post__month block"><?php echo get_the_date('M'); ?></span>
 						</div>
-						<div class="post__content-section col col-10 sm-col-4">
+						<div class="post__content-section col col-11 sm-col-5 md-col-4">
 							<?php 
 								$categories = get_the_category();
 								$category = esc_html( $categories[0]->name );
 							?>
 							<span class="post__category"><?php echo $category ?></span>
-							<h2 class="post__title"><?php the_title(); ?></h2>
+							<a class="post__a" href="<?php the_permalink(); ?>">
+								<h2 class="post__title"><?php the_title(); ?></h2>
+							</a>
 							<p class="post__excerpt"><?php the_field('excerpt') ?></p>	
 						</div>
-						<div class="post__img-section col col-12 sm-col-4">
+						<div class="post__img-section col col-12 sm-col-5 md-col-4">
 							<?php 
 								
 								$images = get_field('gallery');
 								if ($images) : ?>
-
+								<div class="post__carousel-buttons">
+									<button class="post__carousel-button post__carousel-previous">←</button>
+									<button class="post__carousel-button post__carousel-next">→</button>
+								</div>
 								<div class="post__carousel">
 									<?php foreach( $images as $image ): ?>
 										<img class="post__img lazyload" data-src="<?php echo $image['sizes']['db-medium']; ?>" alt="">

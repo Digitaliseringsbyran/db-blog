@@ -57,6 +57,4 @@ function blog_scripts() {
 add_action( 'wp_enqueue_scripts', 'blog_scripts', 20 );
 
 
-
-
 ?>

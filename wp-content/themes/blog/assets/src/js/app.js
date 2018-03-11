@@ -17,7 +17,7 @@ jQuery(function($) {
 
 	$(window).scroll(function() {
 
-	    if ($(document).scrollTop() > 400){  
+	    if ($(document).scrollTop() > 150){  
 	        $('.footer').addClass('visible');
 	    }
 	    else{
@@ -25,13 +25,20 @@ jQuery(function($) {
 	    }
 	});
 
+	var $carousel = $('.post__carousel').flickity({
+		// options
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: false,
+		pageDots: false,
+		wrapAround: true
+	});
 
-	$('.post__carousel').flickity({
-	  // options
-	  cellAlign: 'left',
-	  contain: true,
-	  prevNextButtons: false,
-	  pageDots: false
+	$('.post__carousel-previous').on( 'click', function() {
+	  $carousel.flickity( 'previous' );
+	});
+	$('.post__carousel-next').on( 'click', function() {
+	  $carousel.flickity( 'next' );
 	});
 
 
