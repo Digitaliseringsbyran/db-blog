@@ -37,8 +37,18 @@ jQuery(function($) {
 	$('.post__carousel-previous').on( 'click', function() {
 	  $carousel.flickity( 'previous' );
 	});
+
 	$('.post__carousel-next').on( 'click', function() {
 	  $carousel.flickity( 'next' );
+	});
+
+
+	var $service = $('.service__carousel').flickity({
+		// options
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: false,
+		pageDots: false,
 	});
 
 

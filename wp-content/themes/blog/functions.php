@@ -99,4 +99,38 @@ function add_people_post_type() {
 
 add_action( 'init', 'add_people_post_type' );
 
+
+function add_service_post_type() {
+  $labels = array(
+    'name' => _x('Services', 'post type general name'),
+    'singular_name' => _x('Service', 'post type singular name'),
+    'add_new' => _x('Add New', 'person'),
+    'add_new_item' => __('Add person'),
+    'edit_item' => __('Edit Person'),
+    'new_item' => __('New Person'),
+    'all_items' => __('All people'),
+    'view_item' => __('View person'),
+    'parent_item_colon' => '',
+    'menu_name' => __('Services')
+
+  );
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => null,
+    'supports' => array( 'title', 'editor', 'thumbnail' )
+  ); 
+  register_post_type('service',$args);
+}
+
+add_action( 'init', 'add_service_post_type' );
+
 ?>

@@ -95,6 +95,61 @@
 						</div>
 					</div>
 			<?php endforeach ?>
+
+
+			<?php
+				$post_id = 51;
+				$queried_post = get_post($post_id);
+			?>
+
+			<div class="service clearfix ">
+				<div class="service__content-section col col-11 sm-col-5 md-col-4">
+					<h2 class="service__h2"><?php echo $queried_post->post_title; ?></h2>
+					<p class="service__p"><?php echo $queried_post->post_content; ?></p>
+					<a class="service__a" href="">Läs mer</a>
+				</div>
+				<div class="service__img-section col col-12 sm-col-6 md-col-4">
+					<div class="service__carousel">
+						<div class="service__img">
+							<div class="service__inner">
+								<span class="service__step">Steg</span>
+								<span class="service__arrow"></span>
+							</div>
+						</div>
+						<div class="service__img">
+							<div class="service__inner">
+								<span class="service__step">Steg</span>
+								<span class="service__arrow"></span>
+							</div>
+						</div>
+						<div class="service__img">
+							<div class="service__inner">
+								<span class="service__step">Steg</span>
+								<span class="service__arrow"></span>
+							</div>
+						</div>
+						<div class="service__img">
+							<div class="service__inner">
+								<span class="service__step">Steg</span>
+								<span class="service__arrow"></span>
+							</div>
+						</div>
+						<div class="service__img">
+							<div class="service__inner">
+								<span class="service__step">Steg</span>
+								<span class="service__arrow"></span>
+							</div>
+						</div>
+						<div class="service__img">
+							<div class="service__inner">
+								<span class="service__step">Steg</span>
+								<span class="service__arrow"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
 		</section>
 
 

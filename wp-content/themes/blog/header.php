@@ -19,7 +19,7 @@
 
 
 	<header class="header clearfix">
-		<div class="col-12 sm-col-11 md-col-10 mx-auto">
+		<div class="col-12 sm-col-12 md-col-11 lg-col-10 mx-auto">
 			<div class="header__inner inline-flex justify-between content-center">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img class="header__logo" src="<?php echo get_template_directory_uri()?>/assets/dist/img/db-logo.svg" alt="">

@@ -1,5 +1,8 @@
 .article {
 	padding:$space-5 $space-3;
+	@media (max-width:$breakpoint-sm) {
+		
+	}
 	&__date-section {
 		@media (max-width:$breakpoint-sm) {
 			display:none;
