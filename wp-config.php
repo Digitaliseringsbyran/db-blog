@@ -20,21 +20,27 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'db-site');
+define('WP_HOME', 'http://db.test');
+define('WP_SITEURL', 'http://db.test');
 
-/** MySQL database username */
-define('DB_USER', 'root');
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
+// ** MySQL-inställningar - MySQL-uppgifter får du från ditt webbhotell ** //
+/** Namnet på databasen du vill använda för WordPress */
+define('DB_NAME', 'db-blog');
 
-/** MySQL hostname */
-define('DB_HOST', '127.0.0.1');
+/** MySQL-databasens användarnamn */
+define('DB_USER', 'homestead');
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+/** MySQL-databasens lösenord */
+define('DB_PASSWORD', 'secret');
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** MySQL-server */
+define('DB_HOST', 'homestead');
+
+/** Teckenkodning för tabellerna i databasen. */
+define('DB_CHARSET', 'utf8mb4');
+
+/** Kollationeringstyp för databasen. Ändra inte om du är osäker. */
 define('DB_COLLATE', '');
 
 /**#@+

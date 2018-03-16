@@ -78,7 +78,7 @@ gulp.task('browsersync', function() {
 				];
 	browsersync.init(files, {
 
-		proxy: 'http://localhost:3000/',
+		proxy: 'db.test',
 		injectChanges: true
 
 	});

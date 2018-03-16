@@ -76,7 +76,7 @@
 							<?php 
 								
 								$images = get_field('gallery');
-								if ($images) : ?>
+								if ($images  && get_field('gallery_toggle')) : ?>
 								<div class="post__carousel-buttons">
 									<button class="post__carousel-button post__carousel-previous">←</button>
 									<button class="post__carousel-button post__carousel-next">→</button>
