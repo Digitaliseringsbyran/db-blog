@@ -1,0 +1,48 @@
+.service-page {
+	overflow:hidden;
+	&__h1 {
+		font-family:$mono-font-family;
+		font-size:1.8rem;
+		@media (min-width:$breakpoint-sm) {
+			font-size:3rem;
+		}
+		@media (min-width:$breakpoint-lg) {
+			font-size:4rem;
+		}
+	}
+	&__excerpt {
+		max-width:100px;
+		color:blue;
+	}
+
+	&__summary {
+		font-family:$mono-font-family;
+		text-transform:uppercase;
+		font-size:0.8rem;
+	}
+
+
+	&__line {
+		height:325px;
+		width:1px;
+		background:black;
+		display:inline-block;
+		margin:$space-2 auto;
+		opacity:0.2;
+		transition:3s;
+		&.active {
+			opacity:1;
+		}
+	}
+	
+
+	&__step {
+
+	}
+
+	&__step-title {
+		font-family:$mono-font-family;
+		text-transform:uppercase;
+		font-size:0.8rem;
+	}
+}

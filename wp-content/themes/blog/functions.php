@@ -49,6 +49,8 @@ function blog_scripts() {
     wp_register_script('scroll-reveal', "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js");
     wp_enqueue_script('scroll-reveal');
 
+    wp_register_script('waypoints', "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js");
+    wp_enqueue_script('waypoints');
 
     wp_enqueue_style( 'stylesheet', get_stylesheet_directory_uri() . '/assets/dist/css/main.min.css' );
     wp_enqueue_style( 'stylesheet', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );

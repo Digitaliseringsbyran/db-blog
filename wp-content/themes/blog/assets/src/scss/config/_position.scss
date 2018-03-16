@@ -13,3 +13,11 @@
 .z2 { z-index: $z2 }
 .z3 { z-index: $z3 }
 .z4 { z-index: $z4 }
+
+.absolute-center {
+	top:50%;
+	left:50%;
+	margin:0;
+	position:absolute;
+	transform:translate(-50%, -50%);
+}

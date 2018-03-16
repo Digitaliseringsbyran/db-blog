@@ -1,7 +1,7 @@
 jQuery(function($) {
 
 	window.sr = ScrollReveal();
-	sr.reveal('.post, .service', 
+	sr.reveal('.post, .service, .service-page__step', 
 		{ 
 			duration: 500,
 			scale: 1,
@@ -17,6 +17,13 @@ jQuery(function($) {
 	    }
 	});
 
+
+
+	var waypoints = $('.service-page__line').waypoint({
+	  handler: function(direction) {
+	    $('.service-page__line').addClass('active');
+	  }
+	})
 
 	var carousels = $('.post__img-section').has('.post__carousel');
 
@@ -67,6 +74,7 @@ jQuery(function($) {
 				$(slides[i].element).removeClass('active')
 		}
 	})
+
 
 
 });
