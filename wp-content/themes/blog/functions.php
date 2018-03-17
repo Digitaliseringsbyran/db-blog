@@ -43,8 +43,12 @@ function blog_scripts() {
     wp_register_script('lazysizes', "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js");
     wp_enqueue_script('lazysizes');
 
+
     wp_register_script('flickity', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js");
     wp_enqueue_script('flickity');
+
+    wp_register_script('rellax', "https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.0/rellax.min.js");
+    wp_enqueue_script('rellax');
 
     wp_register_script('scroll-reveal', "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js");
     wp_enqueue_script('scroll-reveal');

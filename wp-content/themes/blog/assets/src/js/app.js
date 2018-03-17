@@ -1,12 +1,17 @@
 jQuery(function($) {
 
-	window.sr = ScrollReveal();
-	sr.reveal('.post, .service, .service-page__step', 
-		{ 
-			duration: 500,
-			scale: 1,
-		}
-	);
+	$.get('/wp-content/themes/blog/assets/dist/icons/sprite.svg', function(data) {
+        var div = document.createElement('div');
+        div.style.width = 0
+        div.style.height = 0
+        div.style.opacity = 0
+        div.style.position = 'absolute'
+        div.style.zIndex = '-999'
+        div.setAttribute("aria-hidden", "true")
+        div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
+        document.body.insertBefore(div, document.body.childNodes[0]);
+    });
+
 
 	$(window).scroll(function() {
 	    if ($(document).scrollTop() > 150){  
@@ -17,13 +22,20 @@ jQuery(function($) {
 	    }
 	});
 
+	if($(document.body).find( ".rellax" )) {
+		console.log("test");
+	}
+	var rellax = new Rellax('.rellax');
 
 
-	var waypoints = $('.service-page__line').waypoint({
-	  handler: function(direction) {
-	    $('.service-page__line').addClass('active');
-	  }
-	})
+	window.sr = ScrollReveal();
+	sr.reveal('.post, .service, .service-page__step', 
+		{ 
+			duration: 500,
+			scale: 1,
+		}
+	);
+
 
 	var carousels = $('.post__img-section').has('.post__carousel');
 

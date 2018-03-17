@@ -45,4 +45,47 @@
 		text-transform:uppercase;
 		font-size:0.8rem;
 	}
+
+	&__step-icon {
+		width:35px;
+		height:35px;
+		margin-top:$space-2;
+	}
+}
+
+
+
+.step {
+
+	&__title {
+		font-family:$mono-font-family;
+		margin-top:$space-4;
+		margin-bottom:0;
+		@media (min-width:$breakpoint-sm) {
+			margin-top:$space-3;
+			padding-right:$space-2;
+			margin-bottom:$space-3;
+		}
+
+	}
+}
+
+
+#buy {
+	position:absolute;
+	top:50%;
+	left:0;
+	width:50px;
+}
+
+#tshirt {
+	position:absolute;
+	top:150%;
+	right:0;
+}
+
+#scrub {
+	position:absolute;
+	top:225%;
+	left:-25px;
 }

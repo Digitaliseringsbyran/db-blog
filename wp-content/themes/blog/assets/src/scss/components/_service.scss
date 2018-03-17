@@ -74,6 +74,9 @@
 				transform:translateX(0%);
 			}
 		}
+		.service__arrow-head {
+			opacity:1;
+		}
 	}
 	@media (min-width:$breakpoint-md) {
 		width:400px;
@@ -134,10 +137,13 @@
 
 .service__arrow-head {
 	position:absolute;
-	right:0;
+	right:5px;
 	height:10px;
 	width:10px;
 	top:50%;
-	transform:translateY(-50%);
+	transition:opacity 0.35s;
+	opacity:0.25;
+	transition-delay:0.45s;
+	transform:translateY(-45%);
 }
 
