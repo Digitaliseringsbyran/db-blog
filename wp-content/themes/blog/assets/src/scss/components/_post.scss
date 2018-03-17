@@ -76,9 +76,10 @@
 	}
 
 	&__category {
-		font-weight:200;
+		font-weight:400;
 		font-family:$mono-font-family;
-		font-size:0.75rem;
+		text-transform:uppercase;
+		font-size:0.7rem;
 		color:palette(grey, x-dark);
 	}
 
@@ -108,7 +109,7 @@
 		bottom:0;
 		left:0;
 		padding:$space-4;
-		z-index:$z4;
+		z-index:$z3;
 		@media (min-width:$breakpoint-md) {
 			padding:$space-4;
 		}

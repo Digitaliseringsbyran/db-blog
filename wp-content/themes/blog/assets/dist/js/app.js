@@ -22,10 +22,10 @@ jQuery(function($) {
 	    }
 	});
 
-	if($(document.body).find( ".rellax" )) {
-		console.log("test");
+
+	if ( $( ".prototype-icon" ).length ) {
+	   var rellax = new Rellax('.rellax');
 	}
-	var rellax = new Rellax('.rellax');
 
 
 	window.sr = ScrollReveal();

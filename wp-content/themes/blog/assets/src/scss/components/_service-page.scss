@@ -71,6 +71,27 @@
 }
 
 
+
+.cta__title {
+	margin-top:$space-2;
+	font-family:$mono-font-family;
+	font-family:$mono-font-family;
+	text-transform:uppercase;
+	font-size:0.8rem;
+}
+
+.cta__span {
+	font-family:$mono-font-family;
+	text-transform:uppercase;
+	font-size:0.8rem;
+}
+
+
+.cta__read-more, .cta__contact {
+	font-family:$mono-font-family;
+}
+
+
 #buy {
 	position:absolute;
 	top:50%;

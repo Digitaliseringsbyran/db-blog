@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+<?php
+	$post_id = 51;
+	$queried_post = get_post($post_id);
+	$field = get_field('service_steps', $post_id);
+	$post_image = get_the_post_thumbnail_url($post_id);
+?>
+
 	<main class="main" role="main">
 
 		<div class="intro clearfix">
@@ -7,12 +14,11 @@
 				<p class="intro__p">Välkommen till <br> Digitaliseringsbyrån i Göteborg.</p>
 				<p class="intro__p">Vi hjälper företag att effektivt testa idéer, lansera digitala tjänster snabbare och optimera sin digitala affär.</p>
 			</div>
-			<div class="col-12 sm-col-10 md-col-8">
+			<div class="col col-12 sm-col-10 md-col-5">
 				<span class="intro__span">Vi gör det genom att:</span>
 
 				<div class="intro-service">
-					<a class="intro-service__a inline-flex" href="">
-						<span class="intro-service__number mr2">01.</span>
+					<a class="intro-service__a inline-flex" href="<?php echo get_permalink($post_id); ?>">
 						<div class="intro-service__content">
 							<span class="intro-service__title">Prototypa istället för att snacka</span>
 							<span class="intro-service__description block">Låt dina utmaningar och idéer bli testbara prototyper på 2 dagar</span>
@@ -22,7 +28,6 @@
 
 				<div class="intro-service">
 					<a class="intro-service__a inline-flex" href="">
-						<span class="intro-service__number mr2">02.</span>
 						<div class="intro-service__content">
 							<span class="intro-service__title">Fokusera på kärnan och lansera snabbare</span>
 							<span class="intro-service__description block">Skapa värde för dina kunder tidigare och lansera en beta-version inom 4 veckor</span>
@@ -32,13 +37,22 @@
 
 				<div class="intro-service">
 					<a class="intro-service__a inline-flex" href="">
-						<span class="intro-service__number mr2">03.</span>
 						<div class="intro-service__content">
 							<span class="intro-service__title">Utgå från data istället för åsikt</span>
 							<span class="intro-service__description block">Tolka data, förbättra och uppdatera er digitala affär med våra utvecklingssprintar</span>
 						</div>
 					</a>
 				</div>
+			</div>
+			<div class="intro__client-section col col-12 sm-col-10 md-col-5">
+				<span class="intro__span">Vi har hjälpt organisationer som:</span>
+				<ul class="intro__client-list">
+					<li class="intro__client">Svenskt Näringsliv AB</li>
+					<li class="intro__client">Region Halland</li>
+					<li class="intro__client">Riddermark Bil AB</li>
+					<li class="intro__client">Falkenbergs Näringliv AB</li>
+				</ul>
+
 			</div>
 		</div>
 
@@ -58,12 +72,6 @@
 			<?php foreach ( $posts_array as $index => $post ) : ?>
 					
 					<?php if($index == 2 ) : ?>
-						<?php
-							$post_id = 51;
-							$queried_post = get_post($post_id);
-							$field = get_field('service_steps', $post_id);
-							$post_image = get_the_post_thumbnail_url($post_id);
-						?>
 						<div class="service clearfix ">
 							<div class="service__content-section col col-11 sm-col-5 md-col-4">
 								<span class="post__category"><?php echo $queried_post->post_title; ?></span>
