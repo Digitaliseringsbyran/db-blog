@@ -15,12 +15,17 @@
 
 .intro__p {
 	font-family:$mono-font-family;
-	font-size:1.15rem;
+	font-size:1.25rem;
 	font-weight:400;
 	margin-top:$space-4;
 	@media (min-width:$breakpoint-sm) {
-		font-size:1.3rem;
+		font-size:1.5rem;
 	}
+}
+
+
+.intro__a {
+	text-decoration:underline;
 }
 
 
@@ -29,19 +34,23 @@
 	font-size:0.7rem;
 	font-weight:400;
 	color:palette(grey, x-dark);
-	margin-top:$space-5;
+	margin-top:$space-4;
 	padding-top:$space-3;
 	display:block;
 	text-transform:uppercase;
 	@media (min-width:$breakpoint-sm) {
 		font-size:0.75rem;
+		margin-top:$space-5;
 	}
 }
 
 
 
 .intro-service {
-	margin-top:$space-4;
+	margin-top:$space-2;
+	@media (min-width:$breakpoint-md) {
+		margin-top:$space-4;
+	}
 }
 
 .intro-service__a {
@@ -53,31 +62,19 @@
 
 }
 
-.intro-service__number {
-	font-size:1rem;
-	font-family:$mono-font-family;
-	font-weight:200;
-	vertical-align:top;
-	line-height:1.4;
-	@media (min-width:$breakpoint-sm) {
-		font-size:1.1rem;
-	}
 
-}
-
-
-.intro__client-section {
-	@media (min-width:$breakpoint-sm) {
+.intro__li-section {
+	@media (min-width:$breakpoint-md) {
 		padding-left:$space-3;
 	}
 }
 
-.intro__client-list {
+.intro__li-list {
 	list-style:none;
 	margin-top:$space-4;
 }
 
-.intro__client {
+.intro__li {
 	font-size:1rem;
 	line-height:1.3;
 	font-family:$mono-font-family;
@@ -87,9 +84,11 @@
 
 
 .intro-service__title {
-	font-size:1.1rem;
+	font-size:1rem;
 	line-height:1.3;
 	font-family:$mono-font-family;
+
+
 
 	&:after {
 		content:'↗';
@@ -110,10 +109,11 @@
 .intro-service__description {
 	margin-top:$space-2;
 	font-weight:200;
+	display:none;
 	line-height:1.4;
-	color:palette(black, light);
-	width:80%;
+	color:palette(black, xx-light);
 	@media (min-width:$breakpoint-sm) {
-		width:70%;
+		width:60%;
+		display:block;
 	}
 }

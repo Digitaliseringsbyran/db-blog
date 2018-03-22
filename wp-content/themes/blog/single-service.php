@@ -10,8 +10,8 @@
 	$post_image = get_the_post_thumbnail_url($more_id);
 ?>
 
-	<main role="main">
-		<article class="service-page clearfix">
+	<main role="main container">
+		<article class="service-page container clearfix">
 			<div class="service-page__intro col-12 sm-col-11 md-col-10 lg-col-8 pt5 mt5 mb3 mx-auto center px2">
 				<span class="service-page__summary mb3 block">2 dagar — Fastpris</span>
 				<h1 class="service-page__h1"><?php the_title(); ?></h1>

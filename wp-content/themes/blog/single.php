@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main container">
 	<!-- section -->
-	<article class="article clearfix">
+	<article class="article container clearfix">
 		<div class="col-12 sm-col-11 md-col-10 mx-auto">
 			<div class="col col-12 sm-col-7 lg-col-5">
 				<div class="article__intro-section col col-11 sm-col-10">

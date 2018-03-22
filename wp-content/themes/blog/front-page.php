@@ -7,52 +7,62 @@
 	$post_image = get_the_post_thumbnail_url($post_id);
 ?>
 
-	<main class="main" role="main">
+	<main class="main container" role="main">
 
 		<div class="intro clearfix">
-			<div class="col-12 sm-col-9 md-col-8 lg-col-5">
-				<p class="intro__p">Välkommen till <br> Digitaliseringsbyrån i Göteborg.</p>
-				<p class="intro__p">Vi hjälper företag att effektivt testa idéer, lansera digitala tjänster snabbare och optimera sin digitala affär.</p>
+			<div class="col-12 sm-col-9 md-col-8 lg-col-6 mb4 mt5">
+				<p class="intro__p">Vi hjälper företag att <a class="intro__a" href="<?php echo get_permalink($post_id); ?>">effektivt testa idéer</a>, <a class="intro__a" href="">lansera digitala tjänster snabbare</a> och <a class="intro__a" href="">optimera sin digitala affär</a>.</p>
 			</div>
-			<div class="col col-12 sm-col-10 md-col-5">
+			<div class="intro-service__section col col-12 sm-col-10 md-col-5">
 				<span class="intro__span">Vi gör det genom att:</span>
+				<ul class="intro__li-list">
+					<li class="intro-service">
+						<a class="intro-service__a inline-flex" href="<?php echo get_permalink($post_id); ?>">
+							<div class="intro-service__content">
+								<span class="intro-service__title">Prototypa idéer på 2 dagar</span>
+								<span class="intro-service__description block">Låt dina utmaningar och idéer bli testbara prototyper på 2 dagar</span>
+							</div>
+						</a>
+					</li>
 
-				<div class="intro-service">
-					<a class="intro-service__a inline-flex" href="<?php echo get_permalink($post_id); ?>">
-						<div class="intro-service__content">
-							<span class="intro-service__title">Prototypa istället för att snacka</span>
-							<span class="intro-service__description block">Låt dina utmaningar och idéer bli testbara prototyper på 2 dagar</span>
-						</div>
-					</a>
-				</div>
+					<li class="intro-service">
+						<a class="intro-service__a inline-flex" href="">
+							<div class="intro-service__content">
+								<span class="intro-service__title">Lansera pilotprojekt inom 4 veckor</span>
+								<span class="intro-service__description block">Skapa värde för dina kunder tidigare och lansera en fungerande pilot-version inom 4 veckor</span>
+							</div>
+						</a>
+					</li>
 
-				<div class="intro-service">
-					<a class="intro-service__a inline-flex" href="">
-						<div class="intro-service__content">
-							<span class="intro-service__title">Fokusera på kärnan och lansera snabbare</span>
-							<span class="intro-service__description block">Skapa värde för dina kunder tidigare och lansera en beta-version inom 4 veckor</span>
-						</div>
-					</a>
-				</div>
-
-				<div class="intro-service">
-					<a class="intro-service__a inline-flex" href="">
-						<div class="intro-service__content">
-							<span class="intro-service__title">Utgå från data istället för åsikt</span>
-							<span class="intro-service__description block">Tolka data, förbättra och uppdatera er digitala affär med våra utvecklingssprintar</span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="intro__client-section col col-12 sm-col-10 md-col-5">
-				<span class="intro__span">Vi har hjälpt organisationer som:</span>
-				<ul class="intro__client-list">
-					<li class="intro__client">Svenskt Näringsliv AB</li>
-					<li class="intro__client">Region Halland</li>
-					<li class="intro__client">Riddermark Bil AB</li>
-					<li class="intro__client">Falkenbergs Näringliv AB</li>
+					<li class="intro-service">
+						<a class="intro-service__a inline-flex" href="">
+							<div class="intro-service__content">
+								<span class="intro-service__title">Förbättra i snabba utvecklingscykler</span>
+								<span class="intro-service__description block">Tolka data, förbättra och uppdatera er digitala affär med våra utvecklingssprintar</span>
+							</div>
+						</a>
+					</li>
 				</ul>
-
+			</div>
+			<div class="intro__li-section col col-12 sm-col-6 md-col-4">
+				<span class="intro__span">Vi har hjälpt organisationer som:</span>
+				<ul class="intro__li-list">
+					<li class="intro__li">Svenskt Näringsliv AB</li>
+					<li class="intro__li">Region Halland</li>
+					<li class="intro__li">Riddermark Bil AB</li>
+					<li class="intro__li">Marknadsföreningen i Halland</li>
+					<li class="intro__li">Kristian Luuk</li>
+					<li class="intro__li">Falkenbergs Näringliv AB</li>
+				</ul>
+			</div>
+			<div class="intro__li-section col col-12 sm-col-6 md-col-3">
+				<span class="intro__span">Du hittar oss:</span>
+				<ul class="intro__li-list">
+					<li class="intro__li"><a class="intro__a" href="">Norra Allégatan 5</a></li>
+					<li class="intro__li">413 01, Göteborg</li>
+					<li class="intro__li"><a class="intro__a" href="mailto:info@digitaliseringsbyran.se">info@digitaliseringsbyran.se</a></li>
+					<li class="intro__li"><a class="intro__a" href="tel:0730936515">+46 730 936 515</a></li>
+				</ul>
 			</div>
 		</div>
 

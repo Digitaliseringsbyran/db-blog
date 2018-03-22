@@ -1,6 +1,6 @@
 			<!-- footer -->
 			<footer class="footer clearfix">
-				<div class="col-12 lg-col-10 mx-auto ">
+				<div class="col-12 container lg-col-10 mx-auto ">
 					<div class="footer__inner inline-flex justify-between content-center">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<img class="footer__logo" src="<?php echo get_template_directory_uri()?>/assets/dist/img/db-logo.svg" alt="">

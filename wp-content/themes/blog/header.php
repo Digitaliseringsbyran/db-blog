@@ -18,7 +18,7 @@
 	<body>
 
 
-	<header class="header clearfix">
+	<header class="header container clearfix">
 		<div class="col-12 sm-col-12 md-col-11 lg-col-10 mx-auto">
 			<div class="header__inner inline-flex justify-between content-center">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
