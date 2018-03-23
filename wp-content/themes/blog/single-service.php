@@ -43,7 +43,7 @@
 				            <img class="service-page__step-icon" src="<?php the_sub_field('step_icon'); ?>" alt="">
 					    	<span class="service-page__step-title mt2 mb3 center block"><?php the_sub_field('step_title'); ?></span>
 					    	<div class="service-page__img-container">
-					    		<img class="service-page__img" src="<?php echo $image_url; ?>" alt="">
+					    		<img class="service-page__img lazyload" src="<?php echo $image_url; ?>" alt="">
 							</div>
 							<div class="clearfix left-align">
 								<div class="col col-12 sm-col-5">
