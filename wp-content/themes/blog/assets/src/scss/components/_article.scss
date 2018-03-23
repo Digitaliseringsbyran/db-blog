@@ -1,7 +1,7 @@
 .article {
 	padding:$space-5 $space-3;
-	@media (max-width:$breakpoint-sm) {
-		
+	@media (min-width:$breakpoint-sm) and (max-width:$breakpoint-md) {
+		padding:$space-5 0;
 	}
 	&__date-section {
 		@media (max-width:$breakpoint-sm) {

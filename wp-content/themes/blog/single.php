@@ -4,7 +4,7 @@
 	<!-- section -->
 	<article class="article container clearfix">
 		<div class="col-12 sm-col-11 md-col-10 mx-auto">
-			<div class="col col-12 sm-col-7 lg-col-5">
+			<div class="col col-12 sm-col-10 lg-col-5">
 				<div class="article__intro-section col col-11 sm-col-10">
 					<?php 
 						$categories = get_the_category();
