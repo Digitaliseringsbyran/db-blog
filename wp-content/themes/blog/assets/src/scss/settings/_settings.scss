@@ -36,8 +36,17 @@ $paragraph-color: palette(black, light);
 $white    : #fff;
 $black    : #1F1F24;
 $grey     : #C0C8CA;
+$yellow   : #FFC702;
 
 $palettes: (
+	yellow: (
+		xx-light : lighten($yellow, 20%),
+		x-light  : lighten($yellow, 16%),
+		light    : lighten($yellow, 10%),
+		base     : $yellow,
+		dark     : darken($yellow, 8%),
+		x-dark   : darken($yellow, 24%)
+	),
 	grey: (
 		xx-light : lighten($grey, 20%),
 		x-light  : lighten($grey, 16%),

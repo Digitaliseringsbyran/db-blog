@@ -28,6 +28,12 @@
 		font-weight:400;
 		font-family:$mono-font-family;
 	}
+
+	img {
+		width:100%;
+		height:auto;
+		margin:$space-1 0;
+	}
 }
 
 
@@ -79,6 +85,9 @@
 	}
 	@media (min-width:$breakpoint-lg) {
 		padding:0 $space-5;
+	}
+	.p1 {
+		padding:0;
 	}
 	p {
 		margin:$space-2 0;

@@ -89,14 +89,17 @@
 
 .cta__read-more, .cta__contact {
 	font-family:$mono-font-family;
+	font-size: 1.25rem;
+	@media (min-width:$breakpoint-sm) {
+		font-size: 1.5rem;
+	}
 }
 
 
 #buy {
 	position:absolute;
-	top:50%;
+	top:75%;
 	left:0;
-	width:50px;
 }
 
 #tshirt {
@@ -107,6 +110,6 @@
 
 #scrub {
 	position:absolute;
-	top:225%;
+	top:250%;
 	left:-25px;
 }

@@ -1,0 +1,59 @@
+.hiring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:    $space-1;
+    right:  $space-3;
+    @media (min-width:$breakpoint-lg) {
+        right:  $space-5;
+    }
+    width:  110px;
+    height: 110px;
+    border-radius: 100%;
+    background: $yellow;
+}
+
+.hiring__badge {
+    width:  140px; 
+    height: 140px;
+    animation: rotate 15s infinite linear;
+    text-transform: uppercase;
+    animation-direction: reverse;
+    color: $black;
+}
+
+.hiring__text {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: .275em;
+    text-align: justify; 
+    word-spacing: 0.2em;
+    color: $black;
+}
+
+.hiring__smile {
+    position: absolute;
+    width:  60px;
+    height: 60px;
+    border-radius: 100%;
+    animation: rotate 15s infinite linear;
+    background: rgba(#F69500, 0.8);
+}
+
+.hiring__eye {
+    fill: #000;
+}
+
+.hiring__mouth {
+    stroke: #000;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

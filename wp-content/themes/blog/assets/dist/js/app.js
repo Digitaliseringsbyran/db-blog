@@ -62,6 +62,15 @@ jQuery(function($) {
 		});
 	});
 
+
+	var $people = $('.people__carousel').flickity({
+		// options
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: false,
+		pageDots: false,
+	});
+
 	var $service = $('.service__carousel').flickity({
 		// options
 		cellAlign: 'left',

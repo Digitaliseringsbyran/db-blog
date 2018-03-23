@@ -37,9 +37,10 @@
 				    	?>
 				    	<div class="service-page__line"></div>
 				    	<div class="service-page__step px2">
-							<svg class="service-page__step-icon">
+							<!-- <svg class="service-page__step-icon">
 				                <use xlink:href="#hypotes-icon"/>
-				            </svg>
+				            </svg> -->
+				            <img class="service-page__step-icon" src="<?php the_sub_field('step_icon'); ?>" alt="">
 					    	<span class="service-page__step-title mt2 mb3 center block"><?php the_sub_field('step_title'); ?></span>
 					    	<div class="service-page__img-container">
 					    		<img class="service-page__img" src="<?php echo $image_url; ?>" alt="">
