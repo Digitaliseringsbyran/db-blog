@@ -60,19 +60,17 @@
 					</li>
 
 					<li class="intro-service">
-							<div class="intro-service__content">
-								<span class="intro-service__title">Lansera pilotprojekt inom 4 veckor</span>
-								<span class="intro-service__description block">Skapa värde för dina kunder tidigare och lansera en fungerande pilot-version inom 4 veckor</span>
-							</div>
+						<div class="intro-service__content">
+							<span class="intro-service__title">Lansera pilotprojekt inom 4 veckor</span>
+							<span class="intro-service__description block">Skapa värde för dina kunder tidigare och lansera en fungerande pilot-version inom 4 veckor</span>
+						</div>
 					</li>
 
 					<li class="intro-service">
-
-							<div class="intro-service__content">
-								<span class="intro-service__title">Förbättra i snabba utvecklingscykler</span>
-								<span class="intro-service__description block">Tolka data, förbättra och uppdatera er digitala affär med våra utvecklingssprintar</span>
-							</div>
-
+						<div class="intro-service__content">
+							<span class="intro-service__title">Förbättra i snabba utvecklingscykler</span>
+							<span class="intro-service__description block">Tolka data, förbättra och uppdatera er digitala affär med våra utvecklingssprintar</span>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -90,7 +88,7 @@
 			<div class="intro__li-section col col-12 sm-col-6 md-col-3">
 				<span class="intro__span">Du hittar oss på:</span>
 				<ul class="intro__li-list">
-					<li class="intro__li"><a class="intro__a" href="">Norra Allégatan 5</a></li>
+					<li class="intro__li"><a class="intro__a" href="https://www.google.se/maps/place/Digitalisation+Office/@57.7003244,11.9530262,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff369c35bc371:0xc32820b70d95f99f!8m2!3d57.7003216!4d11.9552149?hl=en">Norra Allégatan 5</a></li>
 					<li class="intro__li">413 01, Göteborg</li>
 					<li class="intro__li"><a class="intro__a" href="mailto:info@digitaliseringsbyran.se">info@digitaliseringsbyran.se</a></li>
 					<li class="intro__li"><a class="intro__a" href="tel:0730936515">+46 730 936 515</a></li>
@@ -183,7 +181,9 @@
 								</div>
 								<div class="post__carousel">
 									<?php foreach( $images as $image ): ?>
-										<img class="post__img lazyload" data-src="<?php echo $image['sizes']['db-medium@2x']; ?>" alt="">
+										<div class="post__img-container">
+											<img class="post__img lazyload" data-src="<?php echo $image['sizes']['db-medium@2x']; ?>" alt="">
+										</div>
 									 <?php endforeach; ?>
 								</div>
 

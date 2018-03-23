@@ -28,12 +28,6 @@
 		font-weight:400;
 		font-family:$mono-font-family;
 	}
-
-	img {
-		width:100%;
-		height:auto;
-		margin:$space-1 0;
-	}
 }
 
 
@@ -51,7 +45,7 @@
 	font-weight:200;
 	margin-top:$space-4;
 	margin-bottom:$space-3;
-	font-size:1.1rem;
+	font-size:1.2rem;
 	color:palette(black, x-light);
 }
 
@@ -84,13 +78,25 @@
 		margin-top:$space-3;
 	}
 	@media (min-width:$breakpoint-lg) {
-		padding:0 $space-5;
+		padding-left:$space-5;
 	}
 	.p1 {
 		padding:0;
 	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-family:$mono-font-family;
+		margin-top:$space-3;
+		margin-bottom:$space-3;
+	}
 	p {
 		margin:$space-2 0;
+		line-height:1.7;
 		font-size:1.1rem;
+	}
+	img {
+		width:100%;
+		height:auto;
+		margin:$space-3 0;
 	}
 }

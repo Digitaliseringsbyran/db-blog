@@ -101,7 +101,6 @@
 		position:relative;
 		overflow:hidden;
 		outline:none;
-		padding-bottom:66.667%;
 	}
 
 	&__carousel-buttons {
@@ -144,6 +143,7 @@
 
 	&__img-container {
 		padding-bottom:66.667%;
+		width:100%;
 		background:palette(grey, xx-light);
 		position:relative;
 		overflow:hidden;
