@@ -99,4 +99,10 @@
 		height:auto;
 		margin:$space-3 0;
 	}
+	ul,ol {
+		list-style-type: square;
+		li {
+			margin-top:$space-2;
+		}
+	}
 }
