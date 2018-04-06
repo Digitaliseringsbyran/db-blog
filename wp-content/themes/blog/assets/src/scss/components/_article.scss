@@ -52,6 +52,7 @@
 .article__img-container {
 	padding-bottom:66.667%;
 	background:palette(grey, xx-light);
+	height: 0;
 	position:relative;
 	width: 100%;
 	overflow:hidden;
@@ -70,6 +71,7 @@
 
 .article__carousel {
 	outline:none;
+	position: relative;
 }
 
 
