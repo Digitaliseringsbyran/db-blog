@@ -41,7 +41,7 @@
 				                <use xlink:href="#hypotes-icon"/>
 				            </svg> -->
 				            <img class="service-page__step-icon" src="<?php the_sub_field('step_icon'); ?>" alt="">
-					    	<span class="service-page__step-title mt2 mb3 center block"><?php the_sub_field('step_title'); ?></span>
+					    	<span class="service-page__step-title mb3 center block"><?php the_sub_field('step_title'); ?></span>
 					    	<div class="service-page__img-container">
 					    		<img class="service-page__img lazyload" src="<?php echo $image_url; ?>" alt="">
 							</div>
@@ -106,17 +106,17 @@
 
 
 			<div class="prototype-icon rellax" id="tshirt">
-			  	<svg class="">
+			  	<svg class="prototype-icon__svg">
 	                <use xlink:href="#prototype-tshirt-icon"/>
 	            </svg>
 			</div>
 			<div class="prototype-icon rellax" id="buy" data-rellax-speed="-3">
-				<svg class="">
+				<svg class="prototype-icon__svg">
 	                <use xlink:href="#prototype-buy-icon"/>
 	            </svg>
 			</div>
 			<div class="prototype-icon rellax" id="scrub" data-rellax-speed="-2">
-				<svg class="">
+				<svg class="prototype-icon__svg">
 	                <use xlink:href="#prototype-scrub-icon"/>
 	            </svg>
 			</div>
