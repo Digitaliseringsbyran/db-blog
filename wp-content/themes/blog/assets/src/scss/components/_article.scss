@@ -131,10 +131,11 @@
 		margin:$space-3 0;
 		padding-left:1.25rem;
 		list-style-type: square;
-		font-size:1.2rem;
+		font-size:1.1rem;
 		font-weight:200;
 		li {
 			margin-top:$space-2;
+			line-height:1.3;
 		}
 	}
 }
