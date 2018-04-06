@@ -78,6 +78,7 @@ jQuery(function($) {
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
+		freeScroll: true
 	});
 
 	var $service = $('.service__carousel').flickity({
@@ -85,7 +86,7 @@ jQuery(function($) {
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
-		pageDots: false,
+		pageDots: false
 	});
 
 	// Add active to first element

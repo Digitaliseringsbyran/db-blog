@@ -1,5 +1,13 @@
 <?php get_header(); ?>
 
+
+	<?php 
+		$post_id = 51;
+		$queried_post = get_post($post_id);
+		$field = get_field('service_steps', $post_id);
+		$post_image = get_the_post_thumbnail_url($post_id);
+	?>
+
 	<main role="main container">
 	<!-- section -->
 	<article class="article container clearfix">
@@ -42,6 +50,44 @@
 				<?php endif; ?>
 			</div>
 	
+		</div>
+	</article>
+	<section class="post-section">
+		<div class="service clearfix ">
+			<div class="service__content-section col col-11 sm-col-5 md-col-4">
+				<span class="post__category"><?php echo $queried_post->post_title; ?></span>
+				<h2 class="service__h2"><?php the_field('service_intro', $post_id); ?></h2>
+				<p class="service__p"><?php echo $queried_post->post_content; ?></p>
+				<a class="service__a mt4" href="<?php echo get_permalink($post_id); ?>">Läs mer</a>
+			</div>
+			<div class="service__img-section col col-12 sm-col-6 md-col-4">
+				<?php if( have_rows('service_steps', $post_id) ): ?>
+					<div class="service__carousel">
+					    <?php while( have_rows('service_steps', $post_id) ): the_row(); ?>
+					    	<?php 
+
+					    		$image_object = get_sub_field('step_image');
+								$image_size = 'db-square@2x';
+								$image_url = $image_object['sizes'][$image_size];
+					    	?>
+					    	<div class="service__img-container">
+					    		<img class="service__img" src="<?php echo $image_url; ?>" alt="">
+								<div class="service__inner">
+									<span class="service__step"><?php the_sub_field('step_title'); ?></span>
+									<span class="service__arrow">
+									</span>
+									<svg class="service__arrow-head icon">
+						                <use xlink:href="#arrow-head"/>
+						            </svg>
+								</div>
+							</div>
+					    <?php endwhile; ?>
+					    <div class="service__img-container relative">
+					    	<a class="service__a absolute-center z3" href="<?php echo get_permalink($post_id); ?>">Läs mer</a>
+						</div>
+					</div>
+				<?php endif; ?>
+			</div>
 		</div>
 	</section>
 	<!-- /section -->
