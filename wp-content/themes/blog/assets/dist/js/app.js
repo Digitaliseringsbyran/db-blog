@@ -29,7 +29,7 @@ jQuery(function($) {
 
 
 	window.sr = ScrollReveal();
-	sr.reveal('.post, .service, .service-page__step', 
+	sr.reveal('.post, .service-page__step', 
 		{ 
 			duration: 500,
 			scale: 1,
@@ -106,20 +106,5 @@ jQuery(function($) {
 		}
 	})
 
-	/* PAPI */
-	var oldUrl = document.querySelectorAll('.people__img')[2].src;
-	document.querySelectorAll('.people__img')[2].addEventListener("mouseover", og);
-	document.querySelectorAll('.people__img')[2].addEventListener("mouseleave", papi);
-
-	function papi() {
-		console.log(this, "papi")
-		this.src = oldUrl;
-	}
-
-	function og() {
-		console.log(this, "og")
-		var newUrl = "https://blogg.xn--digitaliseringsbyrn-ixb.se/wp-content/uploads/2018/03/Papi-chulo.jpg";
-		this.src = newUrl;
-	}
 
 });

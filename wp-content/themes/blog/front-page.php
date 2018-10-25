@@ -51,12 +51,10 @@
 				<span class="intro__span">Vi gör det genom att:</span>
 				<ul class="intro__li-list">
 					<li class="intro-service">
-						<a class="intro-service__a inline-flex" href="<?php echo get_permalink($post_id); ?>">
-							<div class="intro-service__content">
-								<span class="intro-service__title has-link">Prototypa idéer på 2 dagar</span>
-								<span class="intro-service__description block">Låt dina utmaningar och idéer bli testbara prototyper på 2 dagar</span>
-							</div>
-						</a>
+						<div class="intro-service__content">
+							<span class="intro-service__title has-link">Prototypa idéer på 2 dagar</span>
+							<span class="intro-service__description block">Låt dina utmaningar och idéer bli testbara prototyper på 2 dagar</span>
+						</div>
 					</li>
 
 					<li class="intro-service">
@@ -113,47 +111,6 @@
 			?>
 			
 			<?php foreach ( $posts_array as $index => $post ) : ?>
-					
-					<?php if($index == 3 ) : ?>
-						<div class="service clearfix ">
-							<div class="service__content-section col col-11 sm-col-5 md-col-4">
-								<span class="post__category"><?php echo $queried_post->post_title; ?></span>
-								<h2 class="service__h2"><?php the_field('service_intro', $post_id); ?></h2>
-								<p class="service__p"><?php echo $queried_post->post_content; ?></p>
-								<a class="service__a mt4" href="<?php echo get_permalink($post_id); ?>">Läs mer</a>
-							</div>
-							<div class="service__img-section col col-12 sm-col-6 md-col-4">
-								<?php if( have_rows('service_steps', $post_id) ): ?>
-									<div class="service__carousel">
-									    <?php while( have_rows('service_steps', $post_id) ): the_row(); ?>
-									    	<?php 
-
-									    		$image_object = get_sub_field('step_image');
-												$image_size = 'db-square@2x';
-												$image_url = $image_object['sizes'][$image_size];
-									    	?>
-									    	<div class="service__img-container">
-									    		<img class="service__img" src="<?php echo $image_url; ?>" alt="">
-												<div class="service__inner">
-													<span class="service__step"><?php the_sub_field('step_title'); ?></span>
-													<span class="service__arrow">
-													</span>
-													<svg class="service__arrow-head icon">
-										                <use xlink:href="#arrow-head"/>
-										            </svg>
-												</div>
-											</div>
-									    <?php endwhile; ?>
-									    <div class="service__img-container relative">
-									    	<a class="service__a absolute-center z3" href="<?php echo get_permalink($post_id); ?>">Läs mer</a>
-										</div>
-									</div>
-								<?php endif; ?>
-							</div>
-						</div>
-					<?php endif; ?>
-
-
 					<div class="post clearfix">
 						<div class="post__date-section col col-2 sm-col-1 md-col-1">
 							<span class="post__day block"><?php echo get_the_date('d'); ?></span>
