@@ -23,7 +23,7 @@
 
 		<div class="intro clearfix">
 			<div class="col-12 sm-col-9 md-col-8 lg-col-6 mb4 mt5">
-				<h1 class="intro__h1">Vi hjälper företag att <a class="intro__a" href="<?php echo get_permalink($post_id); ?>">effektivt testa idéer</a>, lansera digitala tjänster snabbare och optimera sin digitala affär.</h1>
+				<h1 class="intro__h1">Vi hjälper företag att effektivt testa idéer, lansera digitala tjänster snabbare och optimera sin digitala affär.</h1>
 				<a href="<?php echo get_permalink($hiring_id); ?>">
 					<div class="hiring">
 						<svg class="hiring__badge" viewBox="-18 -18 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
